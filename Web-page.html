@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="D:\amanwaikar\dev ++\front-end\bootstrap.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+body{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  margin: 0px;
+}
+
+.name{ 
+  background-color: rgb(255, 234, 0);
+  font-size: 60px;
+  margin-right: 400px;
+}
+
+.topnav{
+  background-color: rgb(255, 234, 0);
+  color: rgb(0, 0, 0);
+  text-align: right;
+}
+
+a{
+  padding: 0px 10px;
+  font-weight: 750;
+  font-size: 20px;
+}
+.img{
+  width: 100%;
+  height: 685px;
+  margin-bottom: 100px;
+}        
+.sear{
+  margin: 0px;
+  padding: 0px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+        
+.search{
+  margin: 0px;
+  padding: 0px;
+  width: 2.5%;
+  padding-top: 4px;
+  padding-bottom: 2px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.foot{
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  margin-left: 425px;
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+#footer{
+    background-color: rgb(160, 144, 1);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 20px;
+    font-weight:500;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.song{
+  margin-top: 35px;
+}
+.playlist{
+  width: 400px;
+  height:300px;
+  box-shadow: 6px 8px gray;
+}
+  </style>
+</head>
+<body>
+
+    <div class="topnav">
+    <button style="font-size:20px; padding:4px 10px 0px 10px;margin-bottom: 25px;" type="submit"><i class="fa">&#xf0c9;</i></button>    
+    <a class="name"><i style="margin-top:0px;">Music</i></a> 
+    <a style="font-size: 25px;" href="#">HOME</a>
+    <a style="font-size: 25px;" href="#">ABOUT</a>
+    <a style="font-size: 25px;" href="#">HISTORY</a>
+    <a style="font-size: 25px;margin-right: 10px;" href="#">MORE</a>
+    <button class="search" type="submit"><i class="fa fa-search"></i></button>
+    <input class="sear" type="search" placeholder=" Search...">
+    </div>
+
+
+<img class="img" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\39.jpg">
+
+<h1>Top Playlist</h1>
+<hr style="background-color: white;color:white;height:5px;margin-top: 10px;margin-bottom: 20px;">
+    <div class=".container" >
+      <div class="row"  style="border:4px solid white;margin-left: 50px;margin-right: 50px;">
+          <div>
+            <img class="playlist" style="margin-left: 50px;" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\47.jpeg">
+          </div>
+
+          <div>
+            <img class="playlist" style="margin-left: 50px;" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\42.jpeg">
+          </div>
+
+          <div>
+            <img class="playlist" style="margin-left: 50px;margin-right: 30px;" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\49.jpeg">
+          </div>
+
+          <div>
+            <img class="playlist" style="margin-left: 50px;margin-top: 50px;margin-bottom: 10px;" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\48.jpeg">
+          </div>
+          <div>
+            <img class="playlist" style="margin-left: 50px;margin-top: 50px;margin-bottom: 10px;" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\42.jpeg">
+          </div>
+        <div>
+    <button style="margin-left: 125px;margin-top: 200px;" type="menu">Click here to see all Playlist >>> </button>
+        </div>
+      </div>
+    </div>
+<hr style="background-color: white;color:white;height:5px;margin-top: 20px">
+
+
+
+    <h2 style="margin-top: 150px;font-size: 45px;font-weight: 600;text-align: center;font-style: italic;">Top 50 Superhit Hip-hop Songs Free </h2>
+
+<h1 class="song">Romantic songs</h1>
+<hr style="background-color: white;color:white;height:5px;">
+
+        <div class="container-fluid" style="color: black;">
+          <div class="row">
+            <div class="col-lg-2 card" style="margin: 0px 35px 0px 30px; padding: 0px;border:5px solid rgb(249, 0, 0);">
+              <img class="card-img-top" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\18.jpeg" style="width:100%;height: 180px;">
+              <div class="card-body">
+                <h4 class="card-text" style="border-top: 3px solid rgb(255, 0, 0);font-weight: 800;font-style: italic;">Raanjhanaa</h4>
+                <audio controls style="width: 210px;height:40px;">
+                  <source style="width: 300px;" src="#"  type="audio/mpeg">
+                </audio>
+                <a href="#" class="btn btn-primary">Download</a>
+              </div>
+            </div>
+            <div class="col-lg-2 card" style=" margin-right: 35px; padding: 0px;border: 5px solid rgb(19, 223, 0);">
+              <img class="card-img-top" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\7.jpeg" style="width:100%;">
+              <div class="card-body">
+                <h4 class="card-text" style="border-top: 3px solid rgb(19, 253, 0);font-weight: 800;font-style: italic;">Nuvve Nuvve</h4>
+                <audio controls style="width: 210px;height:40px;">
+                  <source style="width: 300px;" src="#"  type="audio/mpeg">
+                </audio>
+                <a href="#" class="btn btn-primary">download</a>
+              </div>
+            </div>
+            <div class="col-lg-2 card" style=" margin-right: 35px; padding: 0px;border: 5px solid rgb(255, 251, 0);">
+              <img class="card-img-top" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\22.jpeg" style="width:100%;height: 180px;">
+              <div class="card-body">
+                <h4 class="card-text" style="border-top: 3px solid rgb(255, 247, 0);font-weight: 800;font-style: italic;">Tum Tak</h4>
+                <audio controls style="width: 210px;height:40px;">
+                  <source style="width: 300px;" src="#"  type="audio/mpeg">
+                </audio>
+                <a href="#" class="btn btn-primary">download</a>
+              </div>
+            </div>
+            <div class="col-lg-2 card" style=" margin-right: 35px; padding: 0px;border: 5px solid rgb(255, 0, 238);">
+              <img class="card-img-top" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\21.jpeg" style="width:100%;height: 180px;">
+              <div class="card-body">
+                <h4 class="card-text" style="border-top: 3px solid rgb(247, 0, 255);font-weight: 800;font-style: italic;">Samjhawan Ki</h4>
+                <audio controls style="width: 210px;height:40px;">
+                  <source style="width: 300px;" src="#"  type="audio/mpeg">
+                </audio>
+                <a href="#" class="btn btn-primary">download</a>
+              </div>
+            </div>
+            <div class="col-lg-2 card" style=" padding: 0px;border: 5px solid rgba(13, 0, 255, 0.944);">
+              <img class="card-img-top" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\19.jpeg" style="width:100%;">
+              <div class="card-body">
+                <h4 class="card-text" style="border-top: 3px solid rgb(17, 0, 255);font-weight: 800;font-style: italic;">Jeene Laha Hoon</h4>
+                <audio controls style="width: 210px;height:40px;">
+                  <source style="width: 300px;" src="#"  type="audio/mpeg">
+                </audio>
+                <a href="#" class="btn btn-primary">download</a>
+              </div> 
+            </div>
+          </div>
+        </div>
+        <button style="margin-left: 700px;margin-top: 40px;" type="menu"> show more </button>
+
+
+
+        <h1 class="song">Hip-hop</h1>
+<hr style="background-color: white;color:white;height:5px;border-width:0px">
+        <div class="container-fluid" style="color: black;">
+          <div class="row">
+            <div class="col-lg-2 card" style=" margin:0px 35px 0px 50px; padding: 0px;border: 5px solid rgb(255, 242, 0);">
+              <img class="card-img-top" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\3.jpeg" style="width:100%;height: 150px;">
+              <div class="card-body">
+                <h4 class="card-text" style="border-top: 3px solid rgb(255, 242, 0);font-weight: 800;font-style: italic;">Master The Blaster</h4>
+                <audio controls style="width: 210px;height:40px;">
+                  <source style="width: 300px;" src="#"  type="audio/mpeg">
+                </audio>
+                <a href="#" class="btn btn-primary">download</a>
+              </div>
+            </div>
+            <div class="col-lg-2 card" style=" margin: 0px 35px 0px 0px; padding: 0px;border: 5px solid rgb(0, 42, 255);">
+              <img class="card-img-top" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\20.jpeg" style="width:100%;height: 150px;">
+              <div class="card-body">
+                <h4 class="card-text" style="border-top: 3px solid rgb(0, 42, 255);font-weight: 700;font-style: italic;">Hio Hop Pummi</h4>
+                <audio controls style="width: 210px;height:40px;">
+                  <source style="width: 300px;" src="#"  type="audio/mpeg">
+                </audio>
+                <a href="#" class="btn btn-primary">download</a>
+              </div>
+            </div>
+            <div class="col-lg-2 card" style="margin: 0px 35px 0px 0px; padding: 0px;border: 5px solid rgb(255, 4, 4);">
+              <img class="card-img-top" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\5.jpeg" style="width:100%;height: 150px;">
+              <div class="card-body">
+                <h4 class="card-text" style="border-top: 3px solid rgb(255, 0, 0);font-weight: 800;font-style: italic;">Akdi Pakdi</h4>
+                <audio controls style="width: 210px;height:40px;">
+                  <source style="width: 300px;" src="#"  type="audio/mpeg">
+                </audio>
+                <a href="#" class="btn btn-primary">download</a>
+              </div>
+            </div>
+            <div class="col-lg-2 card" style="margin: 0px 35px 0px 0px; padding: 0px;border: 5px solid rgb(11, 227, 0);">
+              <img class="card-img-top" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\16.jpeg" style="width:100%;height: 180px;">
+              <div class="card-body">
+                <h4 class="card-text" style="border-top: 3px solid rgb(26, 255, 0);font-weight: 800;font-style: italic;">Ghungroo</h4>
+                <audio controls style="width: 210px;height:40px;">
+                  <source style="width: 300px;" src="#"  type="audio/mpeg">
+                </audio>
+                <a href="#" class="btn btn-primary">download</a>
+              </div>
+            </div>
+            <div class="col-lg-2 card" style="margin: 0px 35px 0px 0px; padding: 0px;border: 5px solid rgb(255, 145, 0);">
+              <img class="card-img-top" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\9.jpeg" style="width:100%;height: 180px;">
+              <div class="card-body">
+                <h4 class="card-text" style="border-top: 3px solid rgb(255, 145, 0);font-weight: 800;font-style: italic;">Gandi Baat</h4>
+                <audio controls style="width: 210px;height:40px;">
+                  <source style="width: 300px;" src="#"  type="audio/mpeg">
+                </audio>
+                <a href="#" class="btn btn-primary">download</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    <button style="margin-left: 700px;margin-top: 40px;" type="menu"> show more </button>
+
+
+      <h1 class="song">Motivational songs</h1>
+<hr style="background-color: white;color:white;height:5px;border-width:0px">         
+<div class="container-fluid" style="color: black;">
+  <div class="row">
+    <div class="col-lg-2 card" style=" margin:0px 35px 0px 50px; padding: 0px;border: 5px solid rgb(0, 255, 242);">
+      <img class="card-img-top" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\24.jpeg" style="width:100%;height: 180px;">
+      <div class="card-body">
+        <h4 class="card-text" style="border-top: 3px solid rgb(0, 208, 255);font-weight: 800;font-style: italic;">Dangal</h4>
+        <audio controls style="width: 210px;height:40px;">
+          <source style="width: 300px;" src="#"  type="audio/mpeg">
+        </audio>
+        <a href="#" class="btn btn-primary">download</a>
+      </div>
+    </div>
+    <div class="col-lg-2 card" style=" margin: 0px 35px 0px 0px; padding: 0px;border: 5px solid rgb(255, 0, 225);">
+      <img class="card-img-top" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\25.jpeg" style="width:100%;height: 150px;">
+      <div class="card-body">
+        <h4 class="card-text" style="border-top: 3px solid rgb(255, 0, 251);font-weight: 800;font-style: italic;">Brothers Anthem</h4>
+        <audio controls style="width: 210px;height:40px;">
+          <source style="width: 300px;" src="#"  type="audio/mpeg">
+        </audio>
+        <a href="#" class="btn btn-primary">download</a>
+      </div>
+    </div>
+    <div class="col-lg-2 card" style="margin: 0px 35px 0px 0px; padding: 0px;border: 5px solid rgb(255, 247, 4);">
+      <img class="card-img-top" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\23.jpeg" style="width:100%;height: 180px;">
+      <div class="card-body">
+        <h4 class="card-text" style="border-top: 3px solid rgb(255, 255, 0);font-weight: 800;font-style: italic;">Beast Mode</h4>
+        <audio controls style="width: 210px;height:40px;">
+          <source style="width: 300px;" src="#"  type="audio/mpeg">
+        </audio>
+        <a href="#" class="btn btn-primary">download</a>
+      </div>
+    </div>
+    <div class="col-lg-2 card" style="margin: 0px 35px 0px 0px; padding: 0px;border: 5px solid rgb(13, 0, 255);">
+      <img class="card-img-top" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\5.jpeg" style="width:100%;height: 150px;">
+      <div class="card-body">
+        <h4 class="card-text" style="border-top: 3px solid rgb(4, 0, 255);font-weight: 800;font-style: italic;">Waat Laga Denge</h4>
+        <audio controls style="width: 210px;height:40px;">
+          <source style="width: 300px;" src="#"  type="audio/mpeg">
+        </audio>
+        <a href="#" class="btn btn-primary">download</a>
+      </div>
+    </div>
+    <div class="col-lg-2 card" style="margin: 0px 35px 0px 0px; padding: 0px;border: 5px solid rgb(254, 0, 0);">
+      <img class="card-img-top" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\12.jpeg" style="width:100%;height: 180px;">
+      <div class="card-body">
+        <h4 class="card-text" style="border-top: 3px solid rgb(255, 0, 0);font-weight: 800;font-style: italic;">Holiday</h4>
+        <audio controls style="width: 210px;height:40px;">
+          <source style="width: 300px;" src="#"  type="audio/mpeg">
+        </audio>
+        <a href="#" class="btn btn-primary">download</a>
+      </div>
+    </div>
+  </div>
+</div>
+<button style="margin-left: 700px;margin-top: 40px;" type="menu"> show more </button>
+
+
+      <h1 class="song">DJ Remix</h1>
+      <hr style="background-color: white;color:white;height:5px;border-width:0px">
+        <div class="container-fluid" style="color: black;">
+          <div class="row">
+            <div class="col-lg-2 card" style=" margin-right: 35px;margin-left: 50px; padding: 0px;border:5px solid rgb(249, 0, 0);">
+              <img class="card-img-top" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\8.jpeg" style="width:100%;height: 180px;">
+              <div class="card-body">
+                <h4 class="card-text" style="border-top: 3px solid rgb(255, 0, 0);font-weight: 800;font-style: italic;">Joker</h4>
+                <audio controls style="width: 210px;height:40px;">
+                  <source style="width: 300px;" src="#"  type="audio/mpeg">
+                </audio>
+                <a href="#" class="btn btn-primary">download</a>
+              </div>
+            </div>
+            <div class="col-lg-2 card" style=" margin-right: 35px; padding: 0px;border: 5px solid rgb(19, 223, 0);">
+              <img class="card-img-top" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\10.jpeg" style="width:100%;height: 180px;">
+              <div class="card-body">
+                <h4 class="card-text" style="border-top: 3px solid rgb(19, 253, 0);font-weight: 800;font-style: italic;">Ram Leela</h4>
+                <audio controls style="width: 210px;height:40px;">
+                  <source style="width: 300px;" src="#"  type="audio/mpeg">
+                </audio>
+                <a href="#" class="btn btn-primary">download</a>
+              </div>
+            </div>
+            <div class="col-lg-2 card" style=" margin-right: 35px; padding: 0px;border: 5px solid rgb(0, 249, 241);">
+              <img class="card-img-top" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\11.jpeg" style="width:100%;height: 180px;">
+              <div class="card-body">
+                <h4 class="card-text" style="border-top: 3px solid rgb(0, 234, 255);font-weight: 800;font-style: italic;">Dishoom</h4>
+                <audio controls style="width: 210px;height:40px;">
+                  <source style="width: 300px;" src="#"  type="audio/mpeg">
+                </audio>
+                <a href="#" class="btn btn-primary">download</a>
+              </div>
+            </div>
+            <div class="col-lg-2 card" style=" margin-right: 35px; padding: 0px;border: 5px solid rgb(255, 0, 238);">
+              <img class="card-img-top" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\15.jpeg" style="width:100%;height: 180px;">
+              <div class="card-body">
+                <h4 class="card-text" style="border-top: 3px solid rgb(247, 0, 255);font-weight: 800;font-style: italic;">Kabil</h4>
+                <audio controls style="width: 210px;height:40px;">
+                  <source style="width: 300px;" src="#"  type="audio/mpeg">
+                </audio>
+                <a href="#" class="btn btn-primary">download</a>
+              </div>
+            </div>
+            <div class="col-lg-2 card" style=" padding: 0px;border: 5px solid rgba(13, 0, 255, 0.944);">
+              <img class="card-img-top" src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\20.jpeg" style="width:100%;height: 180px;">
+              <div class="card-body">
+                <h4 class="card-text" style="border-top: 3px solid rgb(17, 0, 255);font-weight: 800;font-style: italic;">Bairiyaa</h4>
+                <audio controls style="width: 210px;height:40px;">
+                  <source style="width: 300px;" src="#"  type="audio/mpeg">
+                </audio>
+                <a href="#" class="btn btn-primary">download</a>
+              </div> 
+            </div>
+          </div>
+        </div>
+    <button style="margin-left: 700px;margin-top: 40px;" type="menu"> show more </button>
+
+
+<hr style="background-color: white;color:white;height:5px;margin-top: 60px">
+<hr style="background-color: white;color:white;height:5px;width:1200px">
+<hr style="background-color: white;color:white;height:5px;width:800px">
+<hr style="background-color: white;color:white;height:5px;width:400px">
+<hr style="background-color: white;color:white;height:5px;width:100px">
+<hr style="background-color: white;color:white;height:8px;width:10px">
+
+
+<h2 style="margin-top: 50px;font-size: 45px;font-weight: 600;text-align: center;font-style: italic;">Primium Songs </h2>
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\30.jpg" style="width:100%;height: 500px;">
+  <div class="text"><h5 style="color: black;font-weight: 800;font-style: italic;">Battlecry</h5></div>
+</div>
+
+<div class="mySlides fade">
+  <img src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\j.jpg" style="width:100%;height: 500px;">
+  <div class="text"><h5 style="font-weight: 800;font-style: italic;">Uragiri no Yuuyake</h5></div>
+</div>
+
+<div class="mySlides fade">
+  <img src="D:\amanwaikar\dev ++\front-end\File\Projects\Music website\now\45.jpg" style="width:100%;height: 500px;">
+  <div class="text"><h5 style="font-weight: 800;font-style: italic;">Jiyu no Tsubasa</h5></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center;margin-bottom: 30px;">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+      <div class="container-fluid"  style="background-color: rgb(255, 255, 2);">
+        <div class="container">
+          <div class="row">
+            <div>
+              <h1 class="foot">Lorem ipsum dolor</h1>
+            </div>
+            <div>
+              <p style="text-align: center;color: black;margin:20px 0px 50px 150px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et 
+                <br> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<br> laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+              <div class="col-12"  id="footer">Copy321@gmail.com</div>
+          </div>
+        </div>
+
+
+        <script>
+          let slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000);
+          }
+          </script>
+
+</body>
+</html>
